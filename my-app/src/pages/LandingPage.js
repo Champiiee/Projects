@@ -15,20 +15,26 @@ function LandingPage() {
     >
       <div
         style={{
-          padding: "30px",
-          borderRadius: "10px",
-          width: "100%",
-          maxWidth: "500px",
+          padding: "40px",
+          borderRadius: "12px",
+          width: "80%", 
+          maxWidth: "900px", 
+          minWidth: "400px",
           backgroundColor: "#fff",
-          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
-          textAlign: "center",
+          boxShadow: "0 6px 12px rgba(0, 0, 0, 0.2)", 
+          display: "flex",
+          flexDirection: "column",
+          gap: "25px", 
+          opacity: 0,
+          animation: "fadeIn 0.5s ease-in-out forwards",
+          alignItems: "center",
         }}
       >
         <Typography variant="h4" gutterBottom>
-          Welcome to Our App
+          Welcome to my App
         </Typography>
-        <div style={{ marginTop: "20px" }}>
-          <Button 
+        <div>
+          <Button
             component={Link}
             to="/login"
             variant="contained"
@@ -37,7 +43,12 @@ function LandingPage() {
           >
             Login
           </Button>
-          <Button component={Link} to="/signup" variant="outlined" color="secondary">
+          <Button
+            component={Link}
+            to="/signup"
+            variant="outlined"
+            color="secondary"
+          >
             Sign Up
           </Button>
         </div>
