@@ -8,7 +8,7 @@ function Footer() {
       sx={{
         py: 2,
         textAlign: "center",
-        backgroundColor: "#f1f1f1",
+        backgroundColor: "#333",
         width: "100%",
         position: "fixed",
         bottom: 0,
@@ -16,7 +16,7 @@ function Footer() {
         right: 0,
       }}
     >
-      <Typography variant="body2" color="textSecondary">
+      <Typography variant="body2" color="#fff">
         © {new Date().getFullYear()} My App. All rights reserved.
       </Typography>
     </Box>

@@ -30,7 +30,7 @@ function Login() {
     padding: "30px",
     borderRadius: "10px",
     width: "100%",
-    maxWidth: "700px", // Increased maxWidth to enlarge the form
+    maxWidth: "700px",
     backgroundColor: "#fff",
     boxShadow: "0 6px 12px rgba(0, 0, 0, 0.2)",
     display: "flex",
