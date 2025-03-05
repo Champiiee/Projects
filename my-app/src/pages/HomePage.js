@@ -39,7 +39,7 @@ function HomePage() {
         <img
           src={homeImage}
           alt="Home"
-          className="spinning-image" // Add a class for the spinning animation
+          className="spinning-image"
           style={{ width: "100%", maxWidth: "300px", marginTop: "20px" }}
         />
         <Button
