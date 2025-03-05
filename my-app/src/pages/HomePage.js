@@ -32,13 +32,9 @@ function HomePage() {
         }}
       >
         <Typography variant="h4" gutterBottom>
-          Welcome to my world
+          Welcome to my App
         </Typography>
-        <img
-          src={homeImage}
-          alt="Home"
-          style={{ width: "100%", maxWidth: "300px", marginTop: "20px" }}
-        />
+      
         <Button
           component={Link}
           to="/login"
