@@ -4,7 +4,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import HomePage from "./pages/HomePage";
 import LandingPage from "./pages/LandingPage";
-import './App.css'; // Import the global CSS file
+import './App.css';
 
 function App() {
   return (
