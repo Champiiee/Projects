@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Container, TextField, Button, Typography } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
   const [formData, setFormData] = useState({ email: "", password: "" });
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -12,7 +13,16 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Login Details:", formData);
+    // Retrieve the stored user data from localStorage
+    const storedUser = JSON.parse(localStorage.getItem("user"));
+    if (storedUser && storedUser.email === formData.email && storedUser.password === formData.password) {
+      window.alert("Login successful!");
+      navigate("/home");
+    } else {
+      window.alert("Invalid email or password!");
+    }
   };
+
   const body = {
     background: "#f9f9f9",
     padding: "30px",
@@ -23,6 +33,7 @@ function Login() {
     opacity: 0,
     animation: "fadeIn 0.5s ease-in-out forwards",
   };
+
   return (
     <Container
       maxWidth="sm"
@@ -77,7 +88,6 @@ function Login() {
         </Button>
       </div>
 
-      {/* CSS Animation */}
       <style>
         {`
           @keyframes fadeIn {

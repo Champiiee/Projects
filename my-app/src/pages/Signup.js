@@ -17,7 +17,10 @@ function Signup() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Signup Details:", formData);
+    localStorage.setItem("user", JSON.stringify(formData));
+    window.alert("Signup successful!");
   };
+
   const body = {
     background: "#f9f9f9",
     padding: "30px",
@@ -28,6 +31,9 @@ function Signup() {
     opacity: 0,
     animation: "fadeIn 0.5s ease-in-out forwards",
   };
+
+  const today = new Date().toISOString().split("T")[0];
+
   return (
     <Container
       maxWidth="sm"
@@ -38,9 +44,7 @@ function Signup() {
         minHeight: "100vh",
       }}
     >
-      <div
-        style={{...body}}
-      >
+      <div style={{ ...body }}>
         <Typography variant="h5" gutterBottom>
           Sign Up
         </Typography>
@@ -71,6 +75,7 @@ function Signup() {
             name="birthday"
             type="date"
             InputLabelProps={{ shrink: true }}
+            inputProps={{ max: today }}
             value={formData.birthday}
             onChange={handleChange}
             required
@@ -99,7 +104,6 @@ function Signup() {
         </Button>
       </div>
 
-      {/* CSS Animation */}
       <style>
         {`
           @keyframes fadeIn {

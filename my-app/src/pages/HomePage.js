@@ -1,8 +1,9 @@
 import React from "react";
 import { Container, Typography, Button } from "@mui/material";
 import { Link } from "react-router-dom";
+import homeImage from "../assets/img.png"; // Import the image
 
-function LandingPage() {
+function HomePage() {
   return (
     <Container
       maxWidth="sm"
@@ -16,24 +17,20 @@ function LandingPage() {
       }}
     >
       <Typography variant="h3" gutterBottom>
-        Welcome to Our App
+        Welcome to my world
       </Typography>
-      <div style={{ marginTop: "20px" }}>
-        <Button
-          component={Link}
-          to="/login"
-          variant="contained"
-          color="primary"
-          style={{ marginRight: "10px" }}
-        >
-          Login
-        </Button>
-        <Button component={Link} to="/signup" variant="outlined" color="secondary">
-          Sign Up
-        </Button>
-      </div>
+      <img src={homeImage} alt="Home" style={{ width: "100%", maxWidth: "300px"}} />
+      <Button
+        component={Link}
+        to="/login"
+        variant="contained"
+        color="primary"
+        sx={{ marginTop: "20px" }}
+      >
+        Logout
+      </Button>
     </Container>
   );
 }
 
-export default LandingPage;
+export default HomePage;
