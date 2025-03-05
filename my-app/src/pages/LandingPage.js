@@ -28,7 +28,7 @@ function LandingPage() {
           Welcome to Our App
         </Typography>
         <div style={{ marginTop: "20px" }}>
-          <Button
+          <Button 
             component={Link}
             to="/login"
             variant="contained"

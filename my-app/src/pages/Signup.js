@@ -108,7 +108,18 @@ function Signup() {
         >
           Already have an account? Login
         </Button>
+
+        
       </form>
+      <Button
+              component={Link}
+              to="/"
+              variant="outlined"
+              color="secondary"
+              sx={{ position: "absolute", bottom: "20px", left: "20px" }}
+            >
+              Back to Landing Page
+            </Button>
     </div>
   );
 }
