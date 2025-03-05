@@ -1,7 +1,6 @@
 import React from "react";
-import { Typography, Button, TableBody } from "@mui/material";
+import { Typography, Button } from "@mui/material";
 import { Link } from "react-router-dom";
-import homeImage from "../assets/img.png"; // Import the image
 
 function HomePage() {
   const body = {

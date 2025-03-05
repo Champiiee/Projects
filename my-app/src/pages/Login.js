@@ -25,16 +25,18 @@ function Login() {
       window.alert("Invalid email or password!");
     }
   };
+
   const form = {
-    padding: "30px",
-    borderRadius: "10px",
-    width: "100%",
-    maxWidth: "500px",
+    padding: "40px",
+    borderRadius: "12px",
+    width: "80%",
+    maxWidth: "900px", 
+    minWidth: "400px",
     backgroundColor: "#fff",
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+    boxShadow: "0 6px 12px rgba(0, 0, 0, 0.2)",
     display: "flex",
     flexDirection: "column",
-    gap: "20px",
+    gap: "25px",
     opacity: 0,
     animation: "fadeIn 0.5s ease-in-out forwards",
   };
@@ -43,21 +45,14 @@ function Login() {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    minHeight: "100vh",
     padding: "20px",
+    width: "100%",
+    minHeight: "100vh",
   };
+
   return (
-    <div
-      style={{
-        ...body,
-      }}
-    >
-      <form
-        onSubmit={handleSubmit}
-        style={{
-          ...form,
-        }}
-      >
+    <div style={body}>
+      <form onSubmit={handleSubmit} style={form}>
         <Typography variant="h4" gutterBottom>
           Login
         </Typography>
