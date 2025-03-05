@@ -11,8 +11,6 @@ function LandingPage() {
         justifyContent: "center",
         minHeight: "100vh",
         padding: "20px",
-        overflow: "auto",
-        position: "relative",
       }}
     >
       <div

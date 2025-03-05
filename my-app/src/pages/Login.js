@@ -30,7 +30,7 @@ function Login() {
     padding: "30px",
     borderRadius: "10px",
     width: "100%",
-    maxWidth: "700px",
+    maxWidth: "700px", // Increased maxWidth to enlarge the form
     backgroundColor: "#fff",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
     display: "flex",
@@ -46,9 +46,7 @@ function Login() {
     justifyContent: "center",
     padding: "20px",
     width: "100%",
-    minHeight: "100vh",
-    overflow: "auto",
-    position: "relative",
+    minHeight: "100vh", // Ensure the body takes the full height of the viewport
   };
 
   return (
@@ -81,21 +79,13 @@ function Login() {
         <Button
           component={Link}
           to="/signup"
-          color="secondary"
+          color="secondary"a
           sx={{ marginTop: "15px" }}
         >
           New here? Create an account
         </Button>
       </form>
-      <Button
-        component={Link}
-        to="/"
-        variant="outlined"
-        color="secondary"
-        sx={{ position: "absolute", bottom: "20px", left: "20px" }}
-      >
-        Back to Landing Page
-      </Button>
+      
     </div>
   );
 }

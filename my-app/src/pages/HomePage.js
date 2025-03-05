@@ -8,8 +8,6 @@ function HomePage() {
     display: "flex",
     flexDirection: "column",
     minHeight: "100vh",
-    overflow: "auto",
-    position: "relative",
   };
   const innerBody = {
     flex: 1,

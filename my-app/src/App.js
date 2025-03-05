@@ -13,7 +13,7 @@ function App() {
     <Router>
       <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
         <Header />
-        <div style={{ flex: 1, paddingTop: "64px", paddingBottom: "64px", overflow: "auto" }}>
+        <div style={{ flex: 1, paddingTop: "64px", paddingBottom: "64px"}}>
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/login" element={<Login />} />

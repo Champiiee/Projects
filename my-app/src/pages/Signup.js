@@ -44,8 +44,6 @@ function Signup() {
     minHeight: "100vh",
     padding: "20px",
     boxSizing: "border-box",
-    overflow: "auto",
-  position: "relative",
   };
 
   const today = new Date().toISOString().split("T")[0];
