@@ -13,7 +13,6 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Login Details:", formData);
-    // Retrieve the stored user data from localStorage
     const storedUser = JSON.parse(localStorage.getItem("user"));
     if (storedUser && storedUser.email === formData.email && storedUser.password === formData.password) {
       window.alert("Login successful!");

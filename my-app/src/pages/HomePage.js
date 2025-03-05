@@ -1,25 +1,33 @@
 import React from "react";
-import { Container, Typography, Button } from "@mui/material";
+import { Typography, Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import homeImage from "../assets/img.png"; // Import the image
 
 function HomePage() {
+    
+  const body = {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    minHeight: "100vh",
+    textAlign: "center",
+  };
+
   return (
-    <Container
-      maxWidth="sm"
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        minHeight: "100vh",
-        textAlign: "center",
+    <div
+      style={{
+        ...body
       }}
     >
       <Typography variant="h3" gutterBottom>
         Welcome to my world
       </Typography>
-      <img src={homeImage} alt="Home" style={{ width: "100%", maxWidth: "300px"}} />
+      <img
+        src={homeImage}
+        alt="Home"
+        style={{ width: "100%", maxWidth: "300px", marginTop: "20px" }}
+      />
       <Button
         component={Link}
         to="/login"
@@ -29,7 +37,7 @@ function HomePage() {
       >
         Logout
       </Button>
-    </Container>
+    </div>
   );
 }
 

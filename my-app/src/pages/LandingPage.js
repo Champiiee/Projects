@@ -1,18 +1,21 @@
 import React from "react";
-import { Container, Typography, Button } from "@mui/material";
+import { Typography, Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
 function LandingPage() {
+  const body = {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    minHeight: "100vh",
+    textAlign: "center",
+  };
+
   return (
-    <Container
-      maxWidth="sm"
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        minHeight: "100vh",
-        textAlign: "center",
+    <div
+      style={{
+        ...body
       }}
     >
       <Typography variant="h3" gutterBottom>
@@ -32,7 +35,7 @@ function LandingPage() {
           Sign Up
         </Button>
       </div>
-    </Container>
+    </div>
   );
 }
 
