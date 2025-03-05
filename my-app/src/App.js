@@ -4,6 +4,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import HomePage from "./pages/HomePage";
 import LandingPage from "./pages/LandingPage";
+import './App.css'; // Import the global CSS file
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/home" element={<HomePage />} />
       </Routes>
-    </Router>   
+    </Router>
   );
 }
 
