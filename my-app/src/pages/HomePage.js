@@ -2,6 +2,7 @@ import React from "react";
 import { Typography, Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import homeImage from "../assets/img.png";
+import '../Homepage.css'; // Import the CSS file for the spinning animation
 
 function HomePage() {
   const body = {
@@ -38,6 +39,7 @@ function HomePage() {
         <img
           src={homeImage}
           alt="Home"
+          className="spinning-image" // Add a class for the spinning animation
           style={{ width: "100%", maxWidth: "300px", marginTop: "20px" }}
         />
         <Button
