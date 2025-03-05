@@ -15,7 +15,7 @@ function LandingPage() {
   return (
     <div
       style={{
-        ...body
+        ...body,
       }}
     >
       <Typography variant="h3" gutterBottom>
@@ -31,7 +31,12 @@ function LandingPage() {
         >
           Login
         </Button>
-        <Button component={Link} to="/signup" variant="outlined" color="secondary">
+        <Button
+          component={Link}
+          to="/signup"
+          variant="outlined"
+          color="secondary"
+        >
           Sign Up
         </Button>
       </div>
@@ -39,4 +44,4 @@ function LandingPage() {
   );
 }
 
-export default LandingPage; 
+export default LandingPage;

@@ -14,7 +14,11 @@ function Login() {
     e.preventDefault();
     console.log("Login Details:", formData);
     const storedUser = JSON.parse(localStorage.getItem("user"));
-    if (storedUser && storedUser.email === formData.email && storedUser.password === formData.password) {
+    if (
+      storedUser &&
+      storedUser.email === formData.email &&
+      storedUser.password === formData.password
+    ) {
       window.alert("Login successful!");
       navigate("/home");
     } else {
@@ -45,7 +49,7 @@ function Login() {
     >
       <div
         style={{
-          ...body
+          ...body,
         }}
       >
         <Typography variant="h5" gutterBottom>

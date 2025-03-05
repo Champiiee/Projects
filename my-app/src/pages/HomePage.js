@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import homeImage from "../assets/img.png"; // Import the image
 
 function HomePage() {
-    
   const body = {
     display: "flex",
     flexDirection: "column",
@@ -17,7 +16,7 @@ function HomePage() {
   return (
     <div
       style={{
-        ...body
+        ...body,
       }}
     >
       <Typography variant="h3" gutterBottom>
