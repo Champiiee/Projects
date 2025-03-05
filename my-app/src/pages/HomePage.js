@@ -34,7 +34,7 @@ function HomePage() {
     <div style={body}>
       <div style={innerBody}>
         <Typography variant="h4" gutterBottom>
-          Welcome to my world
+          mekus mekus mo na yan insan!
         </Typography>
         <img
           src={homeImage}

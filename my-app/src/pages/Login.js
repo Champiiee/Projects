@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { TextField, Button, Typography } from "@mui/material";
+import { TextField, Button, Typography, Alert } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
   const [formData, setFormData] = useState({ email: "", password: "" });
+  const [alertMessage, setAlertMessage] = useState("");
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -19,10 +20,10 @@ function Login() {
       storedUser.email === formData.email &&
       storedUser.password === formData.password
     ) {
-      window.alert("Login successful!");
+      setAlertMessage("Login successful!");
       navigate("/home");
     } else {
-      window.alert("Invalid email or password!");
+      setAlertMessage("Invalid email or password!");
     }
   };
 
@@ -76,16 +77,20 @@ function Login() {
         <Button type="submit" variant="contained" color="primary" fullWidth>
           Login
         </Button>
+        {alertMessage && (
+          <Alert severity={alertMessage === "Login successful!" ? "success" : "error"} sx={{ mt: 2 }}>
+            {alertMessage}
+          </Alert>
+        )}
         <Button
           component={Link}
           to="/signup"
-          color="secondary"a
+          color="secondary"
           sx={{ marginTop: "15px" }}
         >
           New here? Create an account
         </Button>
       </form>
-      
     </div>
   );
 }
