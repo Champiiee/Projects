@@ -33,7 +33,7 @@ function HomePage() {
   return (
     <div style={body}>
       <div style={innerBody}>
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h4">
           mekus mekus mo na yan insan!
         </Typography>
         <img
