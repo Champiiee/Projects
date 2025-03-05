@@ -21,19 +21,11 @@ function Signup() {
     window.alert("Signup successful!");
   };
 
-  const body = {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    minHeight: "100vh",
-    padding: "20px",
-  };
-
   const form = {
     padding: "30px",
     borderRadius: "10px",
     width: "100%",
-    maxWidth: "500px",
+    maxWidth: "700px",
     backgroundColor: "#fff",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
     display: "flex",
@@ -41,21 +33,26 @@ function Signup() {
     gap: "20px",
     opacity: 0,
     animation: "fadeIn 0.5s ease-in-out forwards",
+    maxHeight: "calc(100vh - 128px)",
+    overflowY: "auto",
   };
+
+  const body = {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    minHeight: "100vh",
+    padding: "20px",
+    boxSizing: "border-box",
+    overflow: "auto",
+  position: "relative",
+  };
+
   const today = new Date().toISOString().split("T")[0];
 
   return (
-    <div
-      style={{
-        ...body,
-      }}
-    >
-      <form
-        onSubmit={handleSubmit}
-        style={{
-          ...form,
-        }}
-      >
+    <div style={body}>
+      <form onSubmit={handleSubmit} style={form}>
         <Typography variant="h4" gutterBottom>
           Sign Up
         </Typography>

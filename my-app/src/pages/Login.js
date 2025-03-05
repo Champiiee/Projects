@@ -25,11 +25,12 @@ function Login() {
       window.alert("Invalid email or password!");
     }
   };
+
   const form = {
     padding: "30px",
     borderRadius: "10px",
     width: "100%",
-    maxWidth: "500px",
+    maxWidth: "700px",
     backgroundColor: "#fff",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
     display: "flex",
@@ -43,21 +44,16 @@ function Login() {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    minHeight: "100vh",
     padding: "20px",
+    width: "100%",
+    minHeight: "100vh",
+    overflow: "auto",
+    position: "relative",
   };
+
   return (
-    <div
-      style={{
-        ...body,
-      }}
-    >
-      <form
-        onSubmit={handleSubmit}
-        style={{
-          ...form,
-        }}
-      >
+    <div style={body}>
+      <form onSubmit={handleSubmit} style={form}>
         <Typography variant="h4" gutterBottom>
           Login
         </Typography>
