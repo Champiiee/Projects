@@ -27,11 +27,10 @@ function Login() {
   };
 
   const form = {
-    padding: "40px",
-    borderRadius: "12px",
-    width: "80%",
-    maxWidth: "900px", 
-    minWidth: "400px",
+    padding: "30px",
+    borderRadius: "10px",
+    width: "100%",
+    maxWidth: "700px", // Increased maxWidth to enlarge the form
     backgroundColor: "#fff",
     boxShadow: "0 6px 12px rgba(0, 0, 0, 0.2)",
     display: "flex",
@@ -80,21 +79,13 @@ function Login() {
         <Button
           component={Link}
           to="/signup"
-          color="secondary"
+          color="secondary"a
           sx={{ marginTop: "15px" }}
         >
           New here? Create an account
         </Button>
       </form>
-      <Button
-        component={Link}
-        to="/"
-        variant="outlined"
-        color="secondary"
-        sx={{ position: "absolute", bottom: "20px", left: "20px" }}
-      >
-        Back to Landing Page
-      </Button>
+      
     </div>
   );
 }
