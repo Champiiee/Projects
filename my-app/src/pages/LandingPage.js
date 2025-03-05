@@ -9,7 +9,7 @@ function LandingPage() {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        minHeight: "100vh",
+        minHeight: "80vh",
         padding: "20px",
       }}
     >

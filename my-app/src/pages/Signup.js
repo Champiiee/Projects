@@ -41,7 +41,7 @@ function Signup() {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    minHeight: "100vh",
+    minHeight: "80vh",
     padding: "20px",
     boxSizing: "border-box",
   };
@@ -104,15 +104,7 @@ function Signup() {
           Already have an account? Login
         </Button>
       </form>
-      <Button
-        component={Link}
-        to="/"
-        variant="outlined"
-        color="secondary"
-        sx={{ position: "absolute", bottom: "20px", left: "20px" }}
-      >
-        Back to Landing Page
-      </Button>
+     
     </div>
   );
 }

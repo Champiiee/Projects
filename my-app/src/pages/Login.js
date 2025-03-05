@@ -46,7 +46,7 @@ function Login() {
     justifyContent: "center",
     padding: "20px",
     width: "100%",
-    minHeight: "100vh",
+    minHeight: "80vh",
   };
 
   return (
