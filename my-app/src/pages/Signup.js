@@ -27,10 +27,10 @@ function Signup() {
     width: "100%",
     maxWidth: "700px",
     backgroundColor: "#fff",
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+    boxShadow: "0 6px 12px rgba(0, 0, 0, 0.2)", 
     display: "flex",
     flexDirection: "column",
-    gap: "20px",
+    gap: "25px", 
     opacity: 0,
     animation: "fadeIn 0.5s ease-in-out forwards",
     maxHeight: "calc(100vh - 128px)",
@@ -104,6 +104,15 @@ function Signup() {
           Already have an account? Login
         </Button>
       </form>
+      <Button
+        component={Link}
+        to="/"
+        variant="outlined"
+        color="secondary"
+        sx={{ position: "absolute", bottom: "20px", left: "20px" }}
+      >
+        Back to Landing Page
+      </Button>
     </div>
   );
 }

@@ -32,10 +32,10 @@ function Login() {
     width: "100%",
     maxWidth: "700px", // Increased maxWidth to enlarge the form
     backgroundColor: "#fff",
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+    boxShadow: "0 6px 12px rgba(0, 0, 0, 0.2)",
     display: "flex",
     flexDirection: "column",
-    gap: "20px",
+    gap: "25px",
     opacity: 0,
     animation: "fadeIn 0.5s ease-in-out forwards",
   };
@@ -46,7 +46,7 @@ function Login() {
     justifyContent: "center",
     padding: "20px",
     width: "100%",
-    minHeight: "100vh", // Ensure the body takes the full height of the viewport
+    minHeight: "100vh",
   };
 
   return (
